@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bocadnpc001"]
+
+[ext_resource type="Script" path="res://ocad/ocad_npc.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://bshadow001" path="res://shadow.tscn" id="2_shadow"]
+
+[node name="OcadNpc" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_script")
+
+[node name="Shadow" parent="." instance=ExtResource("2_shadow")]
+z_index = -1
+position = Vector2(0, 6)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

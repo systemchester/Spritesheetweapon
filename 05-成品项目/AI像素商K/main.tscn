@@ -1,0 +1,127 @@
+[gd_scene load_steps=23 format=3 uid="uid://ma4j2o3ngyey"]
+
+[ext_resource type="Texture2D" uid="uid://bh1cpb45a73i" path="res://Gemini_Generated_Image_foh40vfoh40vfoh4 (1).png" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://djg6y0hago2rv" path="res://player.tscn" id="1_player"]
+[ext_resource type="PackedScene" uid="uid://bk0530yk6n2my" path="res://follower.tscn" id="4_follower"]
+[ext_resource type="Texture2D" uid="uid://b62sqf21qxtu8" path="res://Axel.png" id="4_kek77"]
+[ext_resource type="Texture2D" uid="uid://dm35nfejqspi8" path="res://Hank.png" id="5_7mycd"]
+[ext_resource type="Texture2D" uid="uid://d3gicrhlic2oe" path="res://Hili.png" id="6_4c57u"]
+[ext_resource type="Texture2D" uid="uid://c6ev3anbfak66" path="res://REI.png" id="7_efxa6"]
+[ext_resource type="Texture2D" uid="uid://dsd6u4h57s0kv" path="res://Tesla.png" id="8_dg77c"]
+[ext_resource type="AudioStream" uid="uid://cmff2dqi3xfqb" path="res://bgm.ogg" id="9_bgm"]
+[ext_resource type="Texture2D" uid="uid://b01362t5jt37t" path="res://Renault.png" id="11_efxa6"]
+[ext_resource type="Texture2D" uid="uid://cbdhnbfiieg7i" path="res://Lyra.png" id="12_dg77c"]
+[ext_resource type="Texture2D" uid="uid://brbwc8504c87v" path="res://Roy.png" id="13_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://cdfa305lmv5yf" path="res://Sarah.png" id="14_vivmo"]
+[ext_resource type="Texture2D" uid="uid://b3fq5fo3onep4" path="res://Monica.png" id="14_w48qg"]
+[ext_resource type="Texture2D" uid="uid://053ojipqqe7c" path="res://Jay.png" id="15_2cqfq"]
+[ext_resource type="Texture2D" uid="uid://buiihq4yhpi7j" path="res://Molly.png" id="16_yaehf"]
+[ext_resource type="Texture2D" uid="uid://b1eek4smuh013" path="res://Hans.png" id="17_074og"]
+[ext_resource type="Texture2D" uid="uid://drfj22ebrpedo" path="res://Lxbc.png" id="17_yaehf"]
+[ext_resource type="PackedScene" uid="uid://cxa7uqjl71qky" path="res://occha_follower.tscn" id="18_82xsv"]
+[ext_resource type="Texture2D" uid="uid://ctxofxkl5nusd" path="res://OC/Layla7.png" id="19_getpj"]
+[ext_resource type="Texture2D" uid="uid://dgw6a3475fkd5" path="res://OC/ocg1.png" id="20_ryguw"]
+[ext_resource type="Texture2D" uid="uid://ccbjl0ma3jcad" path="res://OC/ocg2.png" id="21_d13ii"]
+
+[node name="Node2D" type="Node2D"]
+y_sort_enabled = true
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_bgm")
+autoplay = true
+playback_type = 1
+
+[node name="GeminiGeneratedImageFoh40Vfoh40Vfoh4(1)" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(256.2, -30.799992)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_h2yge")
+
+[node name="Player" parent="." instance=ExtResource("1_player")]
+
+[node name="Follower1" parent="." instance=ExtResource("4_follower")]
+position = Vector2(2, 0)
+spritesheet = ExtResource("4_kek77")
+follow_target_path = NodePath("../Player")
+follow_distance = 16.0
+
+[node name="Follower2" parent="." instance=ExtResource("4_follower")]
+spritesheet = ExtResource("5_7mycd")
+follow_target_path = NodePath("../Player")
+follow_distance = 40.0
+
+[node name="Follower3" parent="." instance=ExtResource("4_follower")]
+spritesheet = ExtResource("6_4c57u")
+follow_target_path = NodePath("../Player")
+follow_distance = 64.0
+
+[node name="Follower4" parent="." instance=ExtResource("4_follower")]
+spritesheet = ExtResource("7_efxa6")
+follow_target_path = NodePath("../Player")
+follow_distance = 88.0
+
+[node name="Follower5" parent="." instance=ExtResource("4_follower")]
+spritesheet = ExtResource("8_dg77c")
+follow_target_path = NodePath("../Player")
+follow_distance = 112.0
+
+[node name="Follower6" parent="." instance=ExtResource("4_follower")]
+spritesheet = ExtResource("11_efxa6")
+follow_target_path = NodePath("../Player")
+follow_distance = 136.0
+
+[node name="Follower7" parent="." instance=ExtResource("4_follower")]
+spritesheet = ExtResource("12_dg77c")
+follow_target_path = NodePath("../Player")
+follow_distance = 160.0
+
+[node name="Follower8" parent="." instance=ExtResource("4_follower")]
+spritesheet = ExtResource("13_ycdy4")
+follow_target_path = NodePath("../Player")
+follow_distance = 184.0
+
+[node name="Follower9" parent="." instance=ExtResource("4_follower")]
+spritesheet = ExtResource("14_w48qg")
+follow_target_path = NodePath("../Player")
+follow_distance = 208.0
+
+[node name="Follower10" parent="." instance=ExtResource("4_follower")]
+spritesheet = ExtResource("14_vivmo")
+follow_target_path = NodePath("../Player")
+follow_distance = 232.0
+
+[node name="Follower11" parent="." instance=ExtResource("4_follower")]
+spritesheet = ExtResource("15_2cqfq")
+follow_target_path = NodePath("../Player")
+follow_distance = 256.0
+
+[node name="Follower12" parent="." instance=ExtResource("4_follower")]
+spritesheet = ExtResource("16_yaehf")
+follow_target_path = NodePath("../Player")
+follow_distance = 280.0
+
+[node name="Follower13" parent="." instance=ExtResource("4_follower")]
+spritesheet = ExtResource("17_074og")
+follow_target_path = NodePath("../Player")
+follow_distance = 304.0
+
+[node name="OcchaFollower" parent="." instance=ExtResource("18_82xsv")]
+spritesheet = ExtResource("19_getpj")
+follow_target_path = NodePath("../Player")
+follow_distance = 328.0
+
+[node name="OcchaFollower2" parent="." instance=ExtResource("18_82xsv")]
+spritesheet = ExtResource("20_ryguw")
+follow_target_path = NodePath("../Player")
+follow_distance = 352.0
+
+[node name="OcchaFollower3" parent="." instance=ExtResource("18_82xsv")]
+spritesheet = ExtResource("21_d13ii")
+follow_target_path = NodePath("../Player")
+follow_distance = 376.0
+
+[node name="toplayer" type="Sprite2D" parent="."]
+z_index = 5
+position = Vector2(256.2, -30.799992)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("17_yaehf")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://4cnwt6hndlu6"
+path="res://.godot/imported/莹酱_虞姬_圈妹_小可 - 凤舞九天_L.ogg-c0041037c44fac7a14749bcf60236f1c.oggvorbisstr"
+
+[deps]
+
+source_file="res://18n/莹酱_虞姬_圈妹_小可 - 凤舞九天_L.ogg"
+dest_files=["res://.godot/imported/莹酱_虞姬_圈妹_小可 - 凤舞九天_L.ogg-c0041037c44fac7a14749bcf60236f1c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

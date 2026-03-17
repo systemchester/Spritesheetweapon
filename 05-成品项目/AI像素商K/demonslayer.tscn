@@ -1,0 +1,106 @@
+[gd_scene load_steps=16 format=3 uid="uid://c5x1e71u4fcqn"]
+
+[ext_resource type="AudioStream" uid="uid://cnvyqw7u3p8d7" path="res://demonslayer/无限.mp3" id="1_fen0f"]
+[ext_resource type="Texture2D" uid="uid://dnwcx4x3lxnnd" path="res://Gemini_Generated_Image_p7dpwwp7dpwwp7dp.png" id="2_rcclr"]
+[ext_resource type="Texture2D" uid="uid://dn7ttltv6i3fd" path="res://demonslayer/Gemini_Generated_Image_5wccao5wccao5wcc.png" id="5_fen0f"]
+[ext_resource type="Texture2D" uid="uid://tddi2agfun34" path="res://demonslayer/Gemini_Generated_Image_7c2cfe7c2cfe7c2c.png" id="6_rcclr"]
+[ext_resource type="PackedScene" uid="uid://dqtnivvwwlxrc" path="res://player2.tscn" id="7_fen0f"]
+[ext_resource type="Texture2D" uid="uid://cdy7gwvjadrcv" path="res://demonslayer/Gemini_Generated_Image_35siez35siez35si.png" id="7_jwdfs"]
+[ext_resource type="Texture2D" uid="uid://ig6oiyqt536g" path="res://demonslayer/Gemini_Generated_Image_82pb8t82pb8t82pb.png" id="8_mw81w"]
+[ext_resource type="Texture2D" uid="uid://cjmhma3waooie" path="res://demonslayer/Gemini_Generated_Image_ajsrdhajsrdhajsr.png" id="9_yxouq"]
+[ext_resource type="Texture2D" uid="uid://tbpubfof8dfh" path="res://demonslayer/Gemini_Generated_Image_uwy8iuuwy8iuuwy8.png" id="10_qikor"]
+[ext_resource type="Texture2D" uid="uid://btmrhbaogsupd" path="res://demonslayer/Gemini_Generated_Image_f6gbbaf6gbbaf6gb.png" id="11_qikor"]
+[ext_resource type="Texture2D" uid="uid://h7s22yj1ueyd" path="res://demonslayer/Gemini_Generated_Image_isjsjiisjsjiisjs.png" id="12_4uolb"]
+[ext_resource type="Texture2D" uid="uid://bkroa8oc1t6fm" path="res://demonslayer/Gemini_Generated_Image_q9ahl8q9ahl8q9ah.png" id="13_qikor"]
+[ext_resource type="Texture2D" uid="uid://dkmtff83hi7ds" path="res://demonslayer/Gemini_Generated_Image_t3elavt3elavt3el.png" id="14_4uolb"]
+[ext_resource type="Texture2D" uid="uid://sevtcae881u2" path="res://demonslayer/Gemini_Generated_Image_jp3p3pjp3p3pjp3p.png" id="15_e7mpn"]
+[ext_resource type="PackedScene" uid="uid://cxa7uqjl71qky" path="res://occha_follower.tscn" id="18_rgl2p"]
+
+[node name="Node2D" type="Node2D"]
+y_sort_enabled = true
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_fen0f")
+autoplay = true
+playback_type = 1
+
+[node name="GeminiGeneratedImageFoh40Vfoh40Vfoh4(1)" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(-275, -147)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_rcclr")
+
+[node name="GeminiGeneratedImageFoh40Vfoh40Vfoh4(1)3" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(-275, -761.99994)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_rcclr")
+
+[node name="GeminiGeneratedImageFoh40Vfoh40Vfoh4(1)2" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(845, -147)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_rcclr")
+
+[node name="GeminiGeneratedImageFoh40Vfoh40Vfoh4(1)4" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(845, -761.99994)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_rcclr")
+
+[node name="Player2" parent="." instance=ExtResource("7_fen0f")]
+visible = false
+
+[node name="OcchaFollower" parent="." instance=ExtResource("18_rgl2p")]
+spritesheet = ExtResource("5_fen0f")
+follow_target_path = NodePath("../Player2")
+
+[node name="OcchaFollower2" parent="." instance=ExtResource("18_rgl2p")]
+spritesheet = ExtResource("6_rcclr")
+follow_target_path = NodePath("../Player2")
+follow_distance = 48.0
+
+[node name="OcchaFollower3" parent="." instance=ExtResource("18_rgl2p")]
+spritesheet = ExtResource("7_jwdfs")
+follow_target_path = NodePath("../Player2")
+follow_distance = 72.0
+
+[node name="OcchaFollower4" parent="." instance=ExtResource("18_rgl2p")]
+spritesheet = ExtResource("8_mw81w")
+follow_target_path = NodePath("../Player2")
+follow_distance = 96.0
+
+[node name="OcchaFollower5" parent="." instance=ExtResource("18_rgl2p")]
+spritesheet = ExtResource("9_yxouq")
+follow_target_path = NodePath("../Player2")
+follow_distance = 120.0
+
+[node name="OcchaFollower6" parent="." instance=ExtResource("18_rgl2p")]
+spritesheet = ExtResource("10_qikor")
+follow_target_path = NodePath("../Player2")
+follow_distance = 144.0
+
+[node name="OcchaFollower7" parent="." instance=ExtResource("18_rgl2p")]
+spritesheet = ExtResource("11_qikor")
+follow_target_path = NodePath("../Player2")
+follow_distance = 168.0
+
+[node name="OcchaFollower8" parent="." instance=ExtResource("18_rgl2p")]
+spritesheet = ExtResource("12_4uolb")
+follow_target_path = NodePath("../Player2")
+follow_distance = 192.0
+
+[node name="OcchaFollower9" parent="." instance=ExtResource("18_rgl2p")]
+spritesheet = ExtResource("13_qikor")
+follow_target_path = NodePath("../Player2")
+follow_distance = 216.0
+
+[node name="OcchaFollower10" parent="." instance=ExtResource("18_rgl2p")]
+spritesheet = ExtResource("14_4uolb")
+follow_target_path = NodePath("../Player2")
+follow_distance = 240.0
+
+[node name="OcchaFollower0" parent="." instance=ExtResource("18_rgl2p")]
+spritesheet = ExtResource("15_e7mpn")
+follow_target_path = NodePath("../Player2")
+follow_distance = 1.0

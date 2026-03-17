@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpvwahrjmxqae"]
+
+[ext_resource type="Script" path="res://super_follower.gd" id="1_super"]
+
+[node name="SuperFollower" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_super")

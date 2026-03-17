@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bocadktv001"]
+
+[ext_resource type="Script" path="res://ocad/ocad_ktv_light.gd" id="1_script"]
+
+[node name="OcadKTVLight" type="Node2D"]
+z_index = -5
+script = ExtResource("1_script")

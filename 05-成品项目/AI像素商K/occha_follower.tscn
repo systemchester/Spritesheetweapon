@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxa7uqjl71qky"]
+
+[ext_resource type="PackedScene" uid="uid://cp3uimpin3bqq" path="res://occha_shadow.tscn" id="1a_shadow"]
+[ext_resource type="Script" uid="uid://cxk1jpydvocme" path="res://occha_follower.gd" id="1_follower"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(16, 20)
+
+[node name="OcchaFollower" type="CharacterBody2D"]
+script = ExtResource("1_follower")
+
+[node name="Shadow" parent="." instance=ExtResource("1a_shadow")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+offset = Vector2(0, -9)

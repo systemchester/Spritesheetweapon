@@ -1,0 +1,32 @@
+[gd_scene load_steps=9 format=3 uid="uid://44l4qkkepofe"]
+
+[ext_resource type="AudioStream" uid="uid://bm86r820ipb2x" path="res://titan/titan.mp3" id="1_l5pin"]
+[ext_resource type="Texture2D" uid="uid://dwqtooxvd5op7" path="res://titan/Gemini_Generated_Image_4o4pwr4o4pwr4o4p.png" id="2_l5pin"]
+[ext_resource type="PackedScene" uid="uid://dqtnivvwwlxrc" path="res://player2.tscn" id="3_tjh4g"]
+[ext_resource type="Texture2D" uid="uid://csnvc1monmcvw" path="res://titan/Gemini_Generated_Image_bd1onkbd1onkbd1o.png" id="5_l5pin"]
+[ext_resource type="Texture2D" uid="uid://c2vsdpuxcmirl" path="res://titan/Gemini_Generated_Image_f57abqf57abqf57a.png" id="6_4vhxl"]
+[ext_resource type="Texture2D" uid="uid://calueux80il5" path="res://titan/Gemini_Generated_Image_lyjyu8lyjyu8lyjy.png" id="7_ma3ev"]
+[ext_resource type="Texture2D" uid="uid://cup8jv2vcrk0a" path="res://titan/Gemini_Generated_Image_p41mghp41mghp41m.png" id="8_2bfyv"]
+[ext_resource type="PackedScene" uid="uid://cpvwahrjmxqae" path="res://super_follower.tscn" id="21_nm30w"]
+
+[node name="Node2D" type="Node2D"]
+y_sort_enabled = true
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_l5pin")
+autoplay = true
+playback_type = 1
+
+[node name="GeminiGeneratedImageFoh40Vfoh40Vfoh4(1)" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(-257, -176)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_l5pin")
+
+[node name="Player2" parent="." instance=ExtResource("3_tjh4g")]
+visible = false
+
+[node name="SuperFollower" parent="." instance=ExtResource("21_nm30w")]
+follow_target_path = NodePath("../Player2")
+use_occha_format = true
+sprites = Array[Texture2D]([ExtResource("5_l5pin"), ExtResource("6_4vhxl"), ExtResource("7_ma3ev"), ExtResource("8_2bfyv")])

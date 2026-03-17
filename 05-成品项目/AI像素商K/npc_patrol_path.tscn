@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://npcpatrolpath1"]
+
+[ext_resource type="Script" path="res://auto_path_mover.gd" id="1_mover"]
+
+[sub_resource type="Curve2D" id="Curve2D_1"]
+point_count = 4
+point_0/position = Vector2(0, 0)
+point_0/in = Vector2(-20, 0)
+point_0/out = Vector2(20, 0)
+point_1/position = Vector2(100, 0)
+point_1/in = Vector2(-20, 0)
+point_1/out = Vector2(20, 0)
+point_2/position = Vector2(100, 100)
+point_2/in = Vector2(0, -20)
+point_2/out = Vector2(0, 20)
+point_3/position = Vector2(0, 100)
+point_3/in = Vector2(0, -20)
+point_3/out = Vector2(0, 20)
+
+[node name="NPCPatrolPath" type="Path2D"]
+curve = SubResource("Curve2D_1")
+
+[node name="AutoPathMover" type="Node2D" parent="."]
+script = ExtResource("1_mover")
+speed = 50.0

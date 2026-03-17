@@ -28,7 +28,8 @@ spritesheets/
 ├── 02-程序/          # Code — 代码资源 / コード資産
 │   └── godot脚本/    # GDScript — 脚本、场景模板 / スクリプト、シーンテンプレート
 ├── 03-插件/          # Plugins — Godot 插件与扩展 / Godot プラグイン・アドオン
-└── 04-链接/          # Links — 外部资源链接 / 外部リンク、リソースサイト
+├── 04-链接/          # Links — 外部资源链接 / 外部リンク、リソースサイト
+└── 05-成品项目/      # Projects — 可运行项目 / 完成プロジェクト
 ```
 
 ## 分类说明 / Categories / 分類
@@ -39,6 +40,7 @@ spritesheets/
 | **02-程序** | GDScript 脚本、节点模板、场景结构 | Scripts, node templates, scenes | スクリプト、ノードテンプレ、シーン |
 | **03-插件** | Godot 官方/第三方插件、Addon | Godot plugins & addons | Godot プラグイン・アドオン |
 | **04-链接** | 素材来源 URL、资源站点收藏 | Source URLs, resource sites | 素材元URL、リソースサイト |
+| **05-成品项目** | 可直接运行的完整 Godot 示例项目 | Runnable Godot sample projects | 実行可能な完成版サンプルプロジェクト |
 
 ## 使用建议 / Tips / 使い方
 

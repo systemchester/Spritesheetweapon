@@ -1,0 +1,207 @@
+[gd_scene load_steps=31 format=3 uid="uid://c4y3fgvuc8hjg"]
+
+[ext_resource type="AudioStream" uid="uid://cnvyqw7u3p8d7" path="res://demonslayer/无限.mp3" id="1_ie8dg"]
+[ext_resource type="Texture2D" uid="uid://b630sd2i6kakd" path="res://demonslayer/Gemini_Generated_Image_q743ayq743ayq743.png" id="2_q6dqk"]
+[ext_resource type="PackedScene" uid="uid://dqtnivvwwlxrc" path="res://player2.tscn" id="3_f1fbm"]
+[ext_resource type="PackedScene" uid="uid://cxa7uqjl71qky" path="res://occha_follower.tscn" id="4_sw28h"]
+[ext_resource type="Texture2D" uid="uid://cxgwqeswtvvag" path="res://demonslayer/Gemini_Generated_Image_xfocjhxfocjhxfoc.png" id="5_q6dqk"]
+[ext_resource type="Texture2D" uid="uid://detdo2ypeo0vm" path="res://demonslayer/Gemini_Generated_Image_vr09qovr09qovr09.png" id="7_ie8dg"]
+[ext_resource type="Texture2D" uid="uid://d1h4kh7e7qq8x" path="res://naroto/Gemini_Generated_Image_2adccx2adccx2adc.png" id="8_f1fbm"]
+[ext_resource type="Texture2D" uid="uid://tbpubfof8dfh" path="res://demonslayer/Gemini_Generated_Image_uwy8iuuwy8iuuwy8.png" id="10_omxl3"]
+[ext_resource type="Texture2D" uid="uid://btmrhbaogsupd" path="res://demonslayer/Gemini_Generated_Image_f6gbbaf6gbbaf6gb.png" id="11_o7481"]
+[ext_resource type="Texture2D" uid="uid://h7s22yj1ueyd" path="res://demonslayer/Gemini_Generated_Image_isjsjiisjsjiisjs.png" id="12_1j1tq"]
+[ext_resource type="Texture2D" uid="uid://bkroa8oc1t6fm" path="res://demonslayer/Gemini_Generated_Image_q9ahl8q9ahl8q9ah.png" id="13_bw2pp"]
+[ext_resource type="Texture2D" uid="uid://dkmtff83hi7ds" path="res://demonslayer/Gemini_Generated_Image_t3elavt3elavt3el.png" id="14_8l1h0"]
+[ext_resource type="Texture2D" uid="uid://sevtcae881u2" path="res://demonslayer/Gemini_Generated_Image_jp3p3pjp3p3pjp3p.png" id="15_73kgv"]
+[ext_resource type="Texture2D" uid="uid://8q20kwuoyajw" path="res://demonslayer/Gemini_Generated_Image_des9ssdes9ssdes9.png" id="15_rsgds"]
+[ext_resource type="Texture2D" uid="uid://dddpkrotog6ax" path="res://demonslayer/Gemini_Generated_Image_vm7wv4vm7wv4vm7w.png" id="16_f1fbm"]
+[ext_resource type="Texture2D" uid="uid://dfg8pr0kxmpr7" path="res://demonslayer/SLX.png" id="17_f1fbm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sw28h"]
+atlas = ExtResource("15_rsgds")
+region = Rect2(0, 192, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cw3cl"]
+atlas = ExtResource("15_rsgds")
+region = Rect2(32, 192, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_myu81"]
+atlas = ExtResource("15_rsgds")
+region = Rect2(64, 192, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avn1f"]
+atlas = ExtResource("15_rsgds")
+region = Rect2(96, 192, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yxv8l"]
+atlas = ExtResource("15_rsgds")
+region = Rect2(128, 192, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dihcy"]
+atlas = ExtResource("15_rsgds")
+region = Rect2(160, 192, 32, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_omxl3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sw28h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cw3cl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_myu81")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_avn1f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yxv8l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dihcy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o7481"]
+atlas = ExtResource("16_f1fbm")
+region = Rect2(0, 192, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1j1tq"]
+atlas = ExtResource("16_f1fbm")
+region = Rect2(32, 192, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bw2pp"]
+atlas = ExtResource("16_f1fbm")
+region = Rect2(64, 192, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8l1h0"]
+atlas = ExtResource("16_f1fbm")
+region = Rect2(96, 192, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_73kgv"]
+atlas = ExtResource("16_f1fbm")
+region = Rect2(128, 192, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nfcpw"]
+atlas = ExtResource("16_f1fbm")
+region = Rect2(160, 192, 32, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qljbt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o7481")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1j1tq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bw2pp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8l1h0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_73kgv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nfcpw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+y_sort_enabled = true
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_ie8dg")
+autoplay = true
+playback_type = 1
+
+[node name="GeminiGeneratedImageFoh40Vfoh40Vfoh4(1)" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(262, -21)
+scale = Vector2(0.29375, 0.29375002)
+texture = ExtResource("2_q6dqk")
+
+[node name="Player2" parent="." instance=ExtResource("3_f1fbm")]
+visible = false
+
+[node name="OcchaFollower" parent="." instance=ExtResource("4_sw28h")]
+spritesheet = ExtResource("5_q6dqk")
+follow_target_path = NodePath("../Player2")
+
+[node name="OcchaFollower2" parent="." instance=ExtResource("4_sw28h")]
+spritesheet = ExtResource("14_8l1h0")
+follow_target_path = NodePath("../Player2")
+follow_distance = 48.0
+
+[node name="OcchaFollower3" parent="." instance=ExtResource("4_sw28h")]
+spritesheet = ExtResource("7_ie8dg")
+follow_target_path = NodePath("../Player2")
+follow_distance = 72.0
+
+[node name="OcchaFollower5" parent="." instance=ExtResource("4_sw28h")]
+spritesheet = ExtResource("8_f1fbm")
+follow_target_path = NodePath("../Player2")
+follow_distance = 120.0
+
+[node name="OcchaFollower6" parent="." instance=ExtResource("4_sw28h")]
+visible = false
+spritesheet = ExtResource("10_omxl3")
+follow_target_path = NodePath("../Player2")
+follow_distance = 144.0
+
+[node name="OcchaFollower7" parent="." instance=ExtResource("4_sw28h")]
+visible = false
+spritesheet = ExtResource("11_o7481")
+follow_target_path = NodePath("../Player2")
+follow_distance = 168.0
+
+[node name="OcchaFollower8" parent="." instance=ExtResource("4_sw28h")]
+visible = false
+spritesheet = ExtResource("12_1j1tq")
+follow_target_path = NodePath("../Player2")
+follow_distance = 192.0
+
+[node name="OcchaFollower9" parent="." instance=ExtResource("4_sw28h")]
+visible = false
+spritesheet = ExtResource("13_bw2pp")
+follow_target_path = NodePath("../Player2")
+follow_distance = 216.0
+
+[node name="OcchaFollower10" parent="." instance=ExtResource("4_sw28h")]
+visible = false
+spritesheet = ExtResource("14_8l1h0")
+follow_target_path = NodePath("../Player2")
+follow_distance = 240.0
+
+[node name="OcchaFollower0" parent="." instance=ExtResource("4_sw28h")]
+spritesheet = ExtResource("15_73kgv")
+follow_target_path = NodePath("../Player2")
+follow_distance = 1.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(367, -41)
+sprite_frames = SubResource("SpriteFrames_omxl3")
+autoplay = "default"
+frame_progress = 0.05553372
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(502, -64)
+sprite_frames = SubResource("SpriteFrames_qljbt")
+autoplay = "default"
+frame_progress = 0.10614777
+
+[node name="GeminiGeneratedImageFoh40Vfoh40Vfoh4(1)2" type="Sprite2D" parent="."]
+z_index = 10
+position = Vector2(262, -21)
+scale = Vector2(0.29375, 0.29375002)
+texture = ExtResource("17_f1fbm")
