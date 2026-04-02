@@ -1,0 +1,90 @@
+[gd_scene load_steps=8 format=3 uid="uid://cmhmyb76l5iw2"]
+
+[ext_resource type="Script" uid="uid://cy2eoc6pflwpb" path="res://ifmap/infmap_root.gd" id="1_root"]
+[ext_resource type="Script" uid="uid://gydd5ynvyjos" path="res://ifmap/infmap_player.gd" id="2_player"]
+[ext_resource type="Texture2D" uid="uid://ccp60pnohjeu6" path="res://ifmap/map/TINA.png" id="3_tina"]
+[ext_resource type="Shader" uid="uid://dufobb3hc4fdi" path="res://ifmap/infmap_terrain_perspective.gdshader" id="4_terrain_persp"]
+[ext_resource type="Script" uid="uid://bwh3v1ecjhrx" path="res://ifmap/infmap_shadow.gd" id="5_shadow"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_terrain_persp"]
+shader = ExtResource("4_terrain_persp")
+shader_parameter/pivot_world = Vector2(0, 0)
+shader_parameter/cam_height = 100.0
+shader_parameter/cam_dist = 200.0
+shader_parameter/strength = 0.95
+shader_parameter/base_scale = 2.9
+shader_parameter/s_min = 0.08
+shader_parameter/ground_skew = 0.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0msly"]
+
+[node name="infmap" type="Node2D"]
+script = ExtResource("1_root")
+
+[node name="Terrain" type="TileMapLayer" parent="."]
+z_index = -10
+material = SubResource("ShaderMaterial_terrain_persp")
+
+[node name="UI" type="CanvasLayer" parent="."]
+layer = 30
+
+[node name="Panel" type="PanelContainer" parent="UI"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 320.0
+offset_bottom = 268.0
+
+[node name="VBox" type="VBoxContainer" parent="UI/Panel"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Title" type="Label" parent="UI/Panel/VBox"]
+layout_mode = 2
+text = "无限地图（地形与网页 map 滑条一致）"
+
+[node name="SeaValueLabel" type="Label" parent="UI/Panel/VBox"]
+layout_mode = 2
+text = "海平面（水域比例） 0.25"
+
+[node name="SeaSlider" type="HSlider" parent="UI/Panel/VBox"]
+custom_minimum_size = Vector2(0, 22)
+layout_mode = 2
+
+[node name="MtnValueLabel" type="Label" parent="UI/Panel/VBox"]
+layout_mode = 2
+text = "山地阈值 0.56"
+
+[node name="MtnSlider" type="HSlider" parent="UI/Panel/VBox"]
+custom_minimum_size = Vector2(0, 22)
+layout_mode = 2
+
+[node name="ReSeedButton" type="Button" parent="UI/Panel/VBox"]
+layout_mode = 2
+text = "随机新地图（新种子）"
+
+[node name="Hint" type="Label" parent="UI/Panel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.7, 0.78, 1)
+theme_override_font_sizes/font_size = 12
+text = "R 键同效；滑条值÷100 写入 BlobWorld（与 React 版相同）。"
+
+[node name="Player" type="CharacterBody2D" parent="."]
+collision_layer = 0
+collision_mask = 0
+motion_mode = 1
+script = ExtResource("2_player")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+texture = ExtResource("3_tina")
+region_enabled = true
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(2, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("RectangleShape2D_0msly")
+
+[node name="Shadow" type="Node2D" parent="Player"]
+z_index = -1
+position = Vector2(0, -14)
+script = ExtResource("5_shadow")
