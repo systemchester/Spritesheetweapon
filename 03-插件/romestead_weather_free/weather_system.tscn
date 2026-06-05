@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://romestead_weather_free/romestead_environment_system.gd" id="1_weather"]
+
+[node name="Environment" type="Node"]
+script = ExtResource("1_weather")
+metadata/romestead_environment_system = true
+metadata/romestead_environment_script_path = "res://romestead_weather_free/romestead_environment_system.gd"
